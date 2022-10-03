@@ -2,14 +2,15 @@
 //3 --Среда; 5 -- Пятница
 
 Console.Clear();
-Console.WriteLine ("Input day number: ");
+Console.WriteLine("Input day number: ");
 int number = int.Parse(Console.ReadLine()!);
-string[] days = new string[] {"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
+string[] days = new string[] { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
 if (number >= 1 && number <= 7)
 {
     Console.WriteLine($"Day of the week: {days[number - 1]}");
 }
-else {
+else
+{
     Console.WriteLine("ERROR");
 }
 

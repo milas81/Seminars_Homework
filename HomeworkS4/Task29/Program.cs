@@ -23,6 +23,7 @@ for (int i = 0; i < array.Length; i++)
 void PrintArray(int[] mass, bool[] enteredByUser)
 {
     bool wasPrinted = false;
+    Console.Write("[");
     for (int i = 0; i < mass.Length; i++)
     {
         if(enteredByUser[i])
@@ -35,6 +36,7 @@ void PrintArray(int[] mass, bool[] enteredByUser)
             Console.Write($"{mass[i]}");
         }
     }
+    Console.Write("]");
 }
 
 PrintArray(array, wasEntered);
